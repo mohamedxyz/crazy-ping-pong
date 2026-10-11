@@ -1,0 +1,31 @@
+{
+  "rewards": {
+    "goal": 100.0,
+    "step": -0.1,
+    "wall": -2.0,
+    "trap": -10.0,
+    "timeout": -5.0
+  },
+  "environment": {
+    "max_steps": 300,
+    "maze": "default",
+    "random_rows": 11,
+    "random_cols": 15,
+    "random_loops": 6,
+    "random_traps": 3,
+    "trap_terminates": false
+  },
+  "agent": {
+    "learning_rate": 0.1,
+    "discount": 0.95,
+    "epsilon_start": 1.0,
+    "epsilon_min": 0.02,
+    "epsilon_decay": 0.999,
+    "decay_mode": "episode"
+  },
+  "training": {
+    "episodes": 5000,
+    "seed": 42,
+    "eval_episodes": 20
+  }
+}
